@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*===================HEADER========================*/
+.top-header {
+    background: url('imgs/background.jpg') no-repeat center center;
+    background-size: cover;
+    max-height: 900px;
+}
+
+#headings-article {
+    color: #ffffff;
+    padding-top: 80px;
+    height: 80%;
+    margin-bottom: 58px;
+}
+
+#big-dino {
+    height: 80%;
+    width: 40%;
+    max-height: 460px;
+}
+
+#headings-article h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px grey;
+}
+
+#headings-article h3 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.main-nav {
+    background: rgba(0, 0, 0, 0.75);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav ul li {
+    display: inline-block;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 16px 0 9px 0;
+    margin-right: 40px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 3px solid #009bed;
+}
+
+#logo-img {
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#btn-article {
+    height: 170px;
+    min-height: 170px;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-article button {
+    background-color: #01bad6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    margin-left: 30px;
+    width: 208px;
+    height: 49px;
+    cursor: pointer;
+}
+
+/*===================Main========================*/
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#main-heading {
+    font-weight: 400;
+}
+
+main section article {
+    display: inline-block;
+    width: 480px;
+    text-align: left;
+}
+
+#small-dino-wrapper {
+    margin-left: 20px;
+}
+
+#small-dino-wrapper img {
+    width: 100%;
+}
+
+#name-input,
+#email-input {
+    width: 48%;
+    display: inline-block;
+}
+
+.star {
+    color: #48b2c2;
+}
+
+#form-section {
+    text-align: left;
+}
+
+#form-section label {
+    display: block;
+}
+
+#form-section input {
+    height: 25px;
+}
+
+#form-section select {
+    height: 30px;
+}
+
+#text-inputs-wrapper {
+    margin-bottom: 20px;
+}
+
+#text-inputs-wrapper div {
+    display: inline-block;
+    width: 48%;
+}
+
+#name-input {
+    width: 100%;
+}
+
+#email-input {
+    width: 99%;
+}
+
+#email-div {
+    margin-left: 32px;
+}
+
+#select {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#textarea {
+    width: calc(100% - 2px);
+    padding: 0;
+}
+
+#submit-btn {
+    background-color: #01bad6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 208px;
+    height: 49px;
+    cursor: pointer;
+}
+
+#submit-btn-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+input[type='text'],
+input[type='email'] {
+    padding-left: 5px;
+}
+
+#textarea {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+footer span {
+    float: left;
+}
+
+footer img {
+    margin-left: 5px;
+}
+
+.hr {
+    margin-left: calc(-50vw + 52%);
+    margin-right: calc(-50vw + 52%);
+    border: 1px solid grey;
+    opacity: 0.3;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#error-div {
+    font-size: 1.2em;
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.main-nav i{
+    display: none;
+}
