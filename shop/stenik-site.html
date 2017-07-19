@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stenik Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="stenik-site.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="main">
+            <div class="closeModalX">X</div>
+            <img src="imgs/modal1-big-woman.png" id="modal1-big-girl-img">
+
+            <form action="" id="modal1-form" method="post">
+                <h4>Влезте във Fashion Triumph</h4>
+                <p class="grey-color" class="all-with-star-par">
+                    Всички полета отбелязани със звезда (<span class="star">*</span>) са задължителни за попълване!
+                </p>
+
+                <span class="modal1-input-wrapper">
+                    <span class="star" id="modal1-email-star">*</span>
+                    <input type="email" name="modal1_email_input" placeholder="E-mail" >
+                </span>
+
+                <span class="modal1-input-wrapper">
+                    <span class="star" id="modal1-password-star">*</span>
+                    <input type="password" name="modal1_email_password" placeholder="Парола" >
+                </span>
+
+                <button type="submit" name="modal1-submit" class="big-black-btn">Вход</button>
+                <p id="forgotten-password-par"><a href="#">Забравена парола?</a></p>
+
+                <button name="fb_log_in" id="fb-log-in-btn">
+                    <img src="imgs/fb-registration-ikon.png">
+                    <div>Вход с Facebook</div>
+                </button>
+
+                <p id="register-yourself">
+                    <span class="bold">Все още не сте част от клуба?</span>
+                    <a href="#" id="registration">Регистрирайте се</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal2 -->
+<div id="myModal2" class="modal2">
+    <!-- Modal content -->
+    <div class="modal-content" id="second-modal-content">
+        <div class="main">
+            <div class="closeModalX">X</div>
+            <img src="imgs/modal2-big-girl.png" id="modal2-big-girl-img">
+
+            <div id="modal2-form-wrapper">
+                <form action="" method="post">
+                    <h4>Създайте своя профил</h4>
+                    <p class="grey-color" class="all-with-star-par" id="need-to-fill-par">
+                        Всички полета отбелязани със звезда (<span class="star">*</span>) са задължителни за попълване!
+                    </p>
+
+
+                    <span class="modal1-input-wrapper">
+                        <span class="star" id="modal2-name-star">*</span>
+                        <input type="text" name="modal_2_name" class="bigger-input" placeholder="Име">
+                    </span>
+
+                    <span class="modal1-input-wrapper">
+                        <span class="star" id="modal2-family-star">*</span>
+                        <input type="text" name="modal2_family" class="bigger-input" placeholder="Фамилия">
+                    </span>
+
+                    <p id="man-woman-par" class="grey-color">
+                        Пол<span class="pink">*</span>
+                        <input type="radio" name="modal2-radio">Мъж
+                        <input type="radio" name="modal2-radio">Жена
+                    </p>
+
+                    <span class="modal1-input-wrapper">
+                        <span class="star"  id="modal2-email-star">*</span>
+                        <input type="email" name="modal_2_email" class="bigger-input" placeholder="E-mail">
+                    </span>
+
+                    <span class="modal1-input-wrapper">
+                        <span class="star" id="modal2-password-star">*</span>
+                        <input type="password" name="modal_2_password" class="bigger-input" placeholder="Парола">
+                    </span>
+
+                    <span class="modal1-input-wrapper">
+                        <span class="star" id="modal2-repeat-password-star">*</span>
+                        <input type="password" name="modal_2_password_confirm" class="bigger-input" placeholder="Потвърдете паролата">
+                    </span>
+
+                    <div id="agree-bulletins-div">
+                        <div class="modal2-checkbox-wrapper">
+                            <input type="checkbox" name="modal_2_checkbox">Абонирайте се за бюлетин
+                        </div>
+                        <div class="modal2-checkbox-wrapper">
+                            <input type="checkbox" name="modal_2_checkbox">Съгласен съм с <span class="bold" id="general-terms-text">общите условия</span>
+                        </div>
+                    </div>
+
+                    <button class="big-black-btn" id="modal2-btn">Регистрация</button>
+                </form>
+            </div>
+
+            <div id="modal2-join-club-wrapper">
+                <h6>Присъединете се и Вие в клуба</h6>
+                <ul>
+                    <li><img src="imgs/new-collection-icon.png"><a href="#">Нови колекции всеки ден</a></li>
+                    <li><img src="imgs/disscount-icon.png"><a href="#">Отстъпки до 80%</a></li>
+                    <li><img src="imgs/lock-icon.png"><a href="#">Безплатна регистрация</a></li>
+                    <li><img src="imgs/prezent-icon.png"><a href="#">Комплимент при първа покупка</a></li>
+                    <li><img src="imgs/crown-icon2.png"><a href="#">Бъди специален клиент</a></li>
+                </ul>
+
+                <div id="special-clients-box">
+                     <img src="imgs/triangle.png" id="triangle-img">
+                     <p id="special-client-receive-text">Специалните клиенти получават:</p>
+                     <p><i class="fa fa-check" aria-hidden="true"></i>Още -30% от нашия outlet;</p>
+                     <p><i class="fa fa-check" aria-hidden="true"></i>Безплатна доставка при поръчки над 80 лв.;</p>
+                     <p><i class="fa fa-check" aria-hidden="true"></i>Допълнителни отстъпки при поръчка над 200 лв., 300 лв., 400 лв.;</p>
+                     <p><i class="fa fa-check" aria-hidden="true" id="last-i-check"></i>
+                         Възможност да пазаруват 24 ч. преди официалната премиера на всяка нова колекция и да се възползват първи от ограничените
+                         количества и разпродажби;
+                     </p>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <main>
+        <header class="main-header">
+            <div class="logo-wrapper">
+                <img src="imgs/logo.png" alt="Stenik logo">
+            </div>
+
+            <div class="header-nav-wrapper">
+                <div id="free-shipping">
+                    <span class="grey-color">Безплатна доставка при покупки </span>
+                    <span class="bold">над 120лв</span>
+                    <span class="grey-color">| Връзка с нас</span>
+                    <span class="bold">0700 100 000</span>
+                </div>
+
+                <nav id="header-main-nav">
+                    <ul>
+                        <li><a href="#">дамска мода</a></li>
+                        <li><a href="#">мъжка мода</a></li>
+                        <li><a href="#">детска мода</a></li>
+                        <li><a href="#">за дама</a></li>
+                        <li><a href="#">аксесоари</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="profile-info-buttons">
+                <div id="profile-menu">
+                    <span class="grey-color">Профил </span>
+                    <span class="bold">
+                        <i class="fa fa-caret-down" aria-hidden="true"> | </i>
+                        <img src="imgs/bag-icon.png" id="bagIcon">
+                        <span id="hover-price">65,00лв.</span>
+                    </span>
+                    <span class="pink">(2)</span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                    <div id="hover-menu">
+                        <div id="quattrocento-wrapper">
+                            <img src="imgs/quattrocento-shoes.png" alt="">
+                            <p id="quattrocento-text">Quattrocento Мъжки обувки в черно с връзки</p>
+                            <div class="size"><span class="grey-color">Размер:</span>42</div>
+                            <div>
+                                <span class="line-through">175,<sup class="zeros-sup">00</sup>лв</span>
+                                <span class="pink">49,<sup class="zeros-sup">00</sup>лв</span>
+                            </div>
+                            <sup class="close">x</sup>
+                        </div>
+
+                        <div id="burrbery-wrapper">
+                            <img src="imgs/burberry-shirt.png" alt="">
+                            <p>Burberry brit Мъжка карирана блузка</p>
+                            <div class="size"><span class="grey-color">Размер:</span>М</div>
+                            <div id="div-139-lv">
+                                <span class="line-through">139,<sup class="zeros-sup">00</sup>лв</span>
+                                <span class="pink">65,<sup class="zeros-sup">00</sup>лв</span>
+                            </div>
+                            <sup class="close">x</sup>
+                        </div>
+
+                        <div id="pink-caret-div">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+
+                        <div id="finish-order-wrapper">
+                            <p>Обща сума:</p>
+                            <div>
+                                <span class="line-through" id="big-size-num1">314,<sup class="zeros-sup">00</sup>лв</span>
+                                <span class="pink" id="big-size-num2">114,<sup class="zeros-sup">00</sup>лв</span></div>
+                            <button>завършете поръчката</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="img-button-wrapper">
+                    <span id="outlet">outlet</span>
+                    <span><img src="imgs/button3.png" id="outlet-btn-img"></span>
+                    <img src="imgs/crown-icon.png" id="img-crown">
+                    <span id="special-client">специален <span id="client-text">клиент</span></span>
+                    <span><img src="imgs/button4.png" id="special-btn-img"></span>
+                </div>
+            </div>
+        </header>
+
+        <section id="gallery-section">
+            <img src="imgs/girl-background.png" alt="Big gallery" id="banner-img">
+        </section>
+
+        <section id="gallery-controls-section">
+            <img src="imgs/gallery-left-arrow.png" id="gallery-left-arrow">
+            <img src="imgs/gallery-right-arrow.png" id="gallery-right-arrow">
+            <div id="discount-70">
+                <div>
+                    <h3>Намаление</h3>
+                    <div>-70%</div>
+                    <a href="#">Пазарувай сега <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="time-expires-section">
+            <article>
+                <div class="headings-for-offers">
+                    <h4>последно добавени</h4>
+                    <div class="hr"></div>
+                </div>
+
+                <div class="offers">
+                    <img src="imgs/etam-woman-balloons.png" alt="Etam promotions">
+                    <div class="offers-and-time">
+                        <p><span class="bold">Etam </span>Стилно бельо и бански костюми</p>
+                        <div>
+                            <span class="pink">Изтича </span>
+                            <time>след 2 дни 3 часа 20 мин</time>
+                            <span class="percents">-75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers" id="armani-offer">
+                    <img src="imgs/armani-man.png" alt="Armani promotions">
+                    <div class="offers-and-time">
+                        <p><span class="bold">Armani </span>Бъди елегантна: аксесоари</p>
+                        <div class="single-row">
+                            <span class="pink">Изтича </span>
+                            <time>след 2 дни 3 часа 20 мин</time>
+                            <span class="percents">-60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers">
+                    <img src="imgs/coven-luxury.png" alt="Coven promotions">
+                    <div class="offers-and-time">
+                        <p><span class="bold">Coven </span>Смела крачка към лукса и елегантността</p>
+                        <div>
+                            <span class="pink">Изтича </span>
+                            <time>след 2 дни 3 часа 20 мин</time>
+                            <span class="percents">-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="headings-for-offers2">
+                    <h4>текущи</h4>
+                    <div class="hr2"></div>
+                </div>
+
+                <div class="offers">
+                    <img src="imgs/kenzo-winter.png" alt="Etam promotions">
+                    <div class="offers-and-time">
+                        <p><span class="bold">Kenzo </span>Подгответе се за студените дни</p>
+                        <div>
+                            <span class="pink">Изтича </span>
+                            <time>след 1 дни 20 часа 45 мин</time>
+                            <span class="percents">-75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers" id="miranda-kerr-offer">
+                    <img src="imgs/mirankda-kerr-accessories.png" alt="Armani promotions">
+                    <div class="offers-and-time">
+                        <p><span class="bold">Miranda Kerr </span>Бъди елегантна: аксесоари</p>
+                        <div>
+                            <span class="pink">Изтича </span>
+                            <time>след 1 дни 20 часа 45 мин</time>
+                            <span class="percents">-60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers">
+                    <img src="imgs/melissa-shoe.png" alt="Coven promotions">
+                    <div class="offers-and-time">
+                        <p><span class="bold">Melissa </span>Бъди елегантна: аксесоари</p>
+                        <div class="single-row">
+                            <span class="pink">Изтича </span>
+                            <time>след 1 дни 20 часа 45 мин</time>
+                            <span class="percents">-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="time-expires-section2">
+            <article>
+                <h4 class="pink" id="expiring">изтичащи</h4>
+
+                <div class="expiring-products">
+                    <div>
+                        <img src="imgs/coppa-underwear.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-20%</span>
+                            <p><span class="bold">Coppa </span>Стилно бельо и бански костюми</p>
+                            <div>
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products" id="h-and-m-div">
+                    <div>
+                        <img src="imgs/h-and-m.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-80%</span>
+                            <p><span class="bold">H&M </span>Изтънчена визия</p>
+                            <div id="expire-second-div">
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products" id="coven-lux-girl-div">
+                    <div>
+                        <img src="imgs/coven-lux-girl.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-45%</span>
+                            <p><span class="bold">Coven </span>Смела крачка към лукса и елегантността</p>
+                            <div>
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products">
+                    <div>
+                        <img src="imgs/coven-girl-bracelet.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-20%</span>
+                            <p><span class="bold">Coven </span>Смела крачка към лукса и елегантността</p>
+                            <div>
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products">
+                    <div>
+                        <img src="imgs/coppa-black-girl.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-20%</span>
+                            <p><span class="bold">Coppa </span>Стилно бельо и бански костюми</p>
+                            <div>
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products" id="h-and-m-div-2">
+                    <div>
+                        <img src="imgs/h-and-m-girl.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-80%</span>
+                            <p><span class="bold">H&M </span>Изтънчена визия</p>
+                            <div id="expire-second-div-2">
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products" id="coven-bags-div">
+                    <div>
+                        <img src="imgs/coven-bags.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-70%</span>
+                            <p><span class="bold">Coven </span>Смела крачка към лукса и елегантността</p>
+                            <div>
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expiring-products">
+                    <div>
+                        <img src="imgs/coven-suit-man.png">
+                        <div class="offers-and-time">
+                            <span class="percents2">-20%</span>
+                            <p><span class="bold">Coven </span>Смела крачка към лукса и елегантността</p>
+                            <div>
+                                <span class="pink">Изтича </span>
+                                <time>след 2 дни 3 часа 20 мин</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="future-section">
+            <h4>Предстоящи</h4>
+            <div class="future-product-box">
+                <img src="imgs/merry-clear-umbrella.png">
+                <p><span class="bold">Merry Clear </span>Смела крачка кум лукса и елегантността</p>
+                <div class="future-start-date"><span class="pink">Стартира </span>24/07/2014</div>
+            </div>
+
+            <div class="future-product-box" id="dsquared">
+                <img src="imgs/dsquared-accessories.png">
+                <p><span class="bold">Carrera & Disquared </span>Стъклени нюанси: аксесоари</p>
+                <div class="future-start-date"><span class="pink">Стартира </span>28/07/2014</div>
+            </div>
+
+            <div class="future-product-box">
+                <img src="imgs/mexx-accessories.png">
+                <p><span class="bold">Mexx </span>Бъди елегантна: аксесоари</p>
+                <div class="future-start-date"><span class="pink">Стартира </span>29/07/2014</div>
+            </div>
+
+            <div class="future-product-box">
+                <img src="imgs/geox-children.png">
+                <p><span class="bold">Geox </span>Най-доброто за малчуганите</p>
+                <div class="future-start-date"><span class="pink">Стартира </span>30/07/2014</div>
+            </div>
+
+            <div class="future-product-box" id="siossam">
+                <img src="imgs/siossam-accessories.png">
+                <p><span class="bold">Siossam </span>Бъди елегантна: аксесоари</p>
+                <div class="future-start-date"><span class="pink">Стартира </span>30/07/2014</div>
+            </div>
+
+            <div class="future-product-box">
+                <img src="imgs/pop-of-color.png">
+                <p><span class="bold">Pop Of Color: Orange&Yellow </span>Слънчеви цветове!Избор на сезона</p>
+                <div class="future-start-date"><span class="pink">Стартира </span>30/07/2014</div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <article>
+                <div class="footer-cols">
+                    <h6>за fashion triumph</h6>
+                    <p>За нас</p>
+                    <p>Нашето виждане</p>
+                    <p>Контакти</p>
+                </div>
+
+                <div class="footer-cols">
+                    <h6>обслужване на клиенти</h6>
+                    <p>Общи условия</p>
+                    <p>Доставка и плащане</p>
+                    <p>Условия за връщане и замяна</p>
+                    <p>Конфиденциалност и политика относно "бисквитките"</p>
+                    <p>Често задавани въпроси</p>
+                </div>
+
+                <div class="footer-cols">
+                    <h6>последвайте ни</h6>
+                    <div class="social-icons-div" id="fb-wrapper"><a href="#"><img src="imgs/fb-icon.png"><span>Facebook</span></a></div>
+                    <div class="social-icons-div"><a href="#"><img src="imgs/google-icon.png"><span>Google +</span></a></div>
+                    <div class="social-icons-div"><a href="#"><img src="imgs/pinterest-icon.png"><span>Pinterest</span></a></div>
+                </div>
+
+                <div class="footer-cols">
+                    <form action="#" method="post">
+                        <h6>записване за е-бюлетин</h6>
+                        <div id="info-products-promotions">Получавайте информация за най-новите ни продукти и промоции</div>
+                        <input type="email" placeholder="Ващият e-mail?" name="email_input" id="email_input">
+                        <button type="submit" name="submit_button" id="submit-button">Запиши ме</button>
+                    </form>
+                </div>
+            </article>
+
+            <article id="second-footer-article">
+                <p>
+                    <a href="#"><img src="imgs/easypay-icon.png"></a>
+                    <a href="#"><img src="imgs/epay-img.png"></a>
+                    <a href="#"><img src="imgs/bank-transfer-img.png"></a>
+                    <a href="#"><img src="imgs/cash-on-delivery-img.png"></a>
+                </p>
+            </article>
+
+            <div class="author-info">
+                    <p>
+                        <span>&copy; 2015г Stenik</span>
+                        <span id="mini-logo-wrapper">
+                            <img src="imgs/mini-logo-icon.png" id="mini-logo">
+                            Електронен магазин от
+                            <span>Stenik</span>
+                        </span>
+                    </p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>

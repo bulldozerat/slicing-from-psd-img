@@ -1,0 +1,264 @@
+@media (max-width: 1060px) {
+    main {
+        width: 100%;
+    }
+/*=====================================HEADER=======================================*/
+    .logo-wrapper {
+        float: none;
+    }
+
+    #profile-info-buttons {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 170px;
+    }
+
+    .header-nav-wrapper {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+
+    #free-shipping {
+        position: absolute;
+        top: 0;
+        left: 200px;
+    }
+/*========================================GALLERY/BANNER======================*/
+    #gallery-section {
+        height: 400px;
+        background: none;
+        width: 100%;
+        position: static;
+        margin-left: 0;
+        left: 0;
+    }
+
+    #banner-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #gallery-controls-section {
+        width: 100%;
+    }
+
+/*========================================TIME EXPIRES SECTION======================*/
+    .offers {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        min-width: 250px;
+    }
+
+    .offers img {
+        width: 100%;
+    }
+
+    .offers-and-time {
+        width: 100%;
+    }
+
+    #armani-offer,
+    #miranda-kerr-offer {
+        margin: 30px auto;
+    }
+
+    .percents {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .hr,
+    .hr2 {
+        display: none;
+    }
+
+    .headings-for-offers h4,
+    .headings-for-offers2 h4{
+        width: auto;
+
+    }
+
+    .headings-for-offers,
+    .headings-for-offers2 {
+        border: none;
+        text-align: center;
+    }
+
+    .headings-for-offers {
+        margin-top: 140px;
+    }
+
+    .offers-and-time .single-row {
+        margin-top: 7px;
+    }
+/*========================================TIME EXPIRES SECTION2======================*/
+    .time-expires-section2 {
+        margin-left: 2px;
+        margin-right: 0;
+        box-shadow: none;
+        width: 99%;
+    }
+
+    .expiring-products img {
+        width: 100%;
+    }
+
+    .expiring-products {
+        width: 23%;
+        min-width: 210px;
+        display: inline-block;
+        position: relative;
+        margin: 15px;
+    }
+
+    #h-and-m-div, #h-and-m-div-2,
+    #coven-lux-girl-div, #coven-bags-div{
+        margin: 15px
+     }
+
+    .time-expires-section2 article {
+        text-align: center;
+    }
+
+    .offers-and-time {
+        text-align: left;
+    }
+/*========================================FUTURE SECTION======================*/
+    .future-section {
+        text-align: center;
+    }
+
+    .future-section p {
+        text-align: left;
+    }
+
+    .future-product-box {
+        min-width: 320px;
+        margin: 20px;
+    }
+
+    #dsquared,
+    #siossam {
+        margin: 20px;
+    }
+
+    .future-start-date {
+        float: left;
+        margin-left: 15px;
+    }
+/*========================================FOOTER======================*/
+    .main-footer {
+        text-align: center;
+    }
+
+    .footer-cols {
+        min-width: 210px;
+        margin-left: 30px;
+    }
+
+    .footer-cols p,
+    .footer-cols h6,
+    .footer-cols form,
+    .social-icons-div {
+        text-align: left;
+    }
+
+    .author-info {
+        text-align: left;
+    }
+    /*===================================Modal===========================================*/
+    #modal1-big-girl-img,
+    #modal2-big-girl-img {
+        display: none;
+    }
+
+    #modal2-form-wrapper {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #modal2-join-club-wrapper {
+        display: none;
+    }
+
+    #second-modal-content {
+        background: #eaeaea;
+    }
+
+    #modal2-btn {
+        position: static;
+        margin-bottom: 25px;
+    }
+
+    #agree-bulletins-div {
+        padding-bottom: 0;
+    }
+
+    .big-black-btn {
+        width: 80%;
+        margin-left: 20px;
+    }
+}
+
+/*===========================================================*/
+@media (max-width: 768px) {
+    #free-shipping {
+        display: none;
+    }
+
+    #profile-info-buttons {
+        top: 0;
+     }
+
+    .main-header {
+        margin-top: 0;
+    }
+    /*=====================Modal media====================*/
+    .modal-content {
+        background: #eaeaea;
+    }
+
+    #modal1-form {
+        width: auto;
+     }
+}
+
+@media (max-width: 650px) {
+    #header-main-nav li {
+        display: block;
+        background-color: black;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    #header-main-nav li a {
+        color: #fff;
+    }
+
+    #gallery-right-arrow,
+    #gallery-left-arrow {
+        display: none;
+     }
+
+    #discount-70 {
+        width: 250px;
+     }
+
+    #discount-70 > div {
+        width: 227px;
+    }
+
+    .author-info {
+        font-size: 14px;
+    }
+
+    #mini-logo {
+        right: 185px;
+        width: 1.5em;
+    }
+}
