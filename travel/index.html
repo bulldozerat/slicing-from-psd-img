@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Начало</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/less/dist/less.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/js.js"></script>
+</head>
+<body>
+<header class="main-header">
+    <div class="logo-info-wrapper">
+        <a href="#"><img src="images/logo.png" alt="Alder logo" id="main-logo"></a>
+        <p class="header-info-wrapper">
+            <span>
+               <i class="fa fa-phone" aria-hidden="true"></i>
+                +359 2 951 63 06 / +359 2 953 25 80
+            </span>
+
+            <span>
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                +359 893 619 494
+            </span>
+
+            <span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                alder@bgnet.bg
+            </span>
+        </p>
+    </div>
+
+    <nav class="main-nav">
+        <ul class="main-nav-ul">
+            <li><a href="#" title="home"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+            <li id="about-us" data-number="1"><a href="#" title="За нас">за нас</a></li>
+            <li><a href="#" title="Новини"> &#33;&#33;&#33;новини&#33;&#33;&#33;</a></li>
+            <li data-number="2"><a href="#" title="Екскурзии">екскурзии</a></li>
+            <li data-number="3"><a href="#" title="Екзотика">екзотика</a></li>
+            <li data-number="4"><a href="#" title="Почивки">почивки</a></li>
+            <li data-number="5"><a href="#" title="Хотели">хотели</a></li>
+            <li data-number="6"><a href="#" title="Празнини оферти" data-num="6">празнини оферти</a></li>
+        </ul>
+
+        <div>
+            <ul class="hover-hidden-menus" id="hidden-hover-menu-1">
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Самолетни билети</a></li>
+                <li><a href="#">Инфо</a></li>
+                <li><a href="#">Документи</a></li>
+                <li><a href="#">Банкови сметки</a></li>
+                <li><a href="#">Общи условия</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="hover-hidden-menus" id="hidden-hover-menu-2">
+                <li><a href="#">Най-изгодните екскурзии за Вас</a></li>
+                <li><a href="#">Круизи</a></li>
+                <li><a href="#">Екскурзии в Австрия</a></li>
+                <li><a href="#">Eкскурзии във Великобритания</a></li>
+                <li><a href="#">Eкскурзии във Гърция</a></li>
+                <li><a href="#">Екскурзии в Исландия</a></li>
+                <li><a href="#">Екскурзии в Испания</a></li>
+                <li><a href="#">Eкскурзии във Италия</a></li>
+                <li><a href="#">Eкскурзии във Македония</a></li>
+                <li><a href="#">Екскурзии в Мароко</a></li>
+                <li><a href="#">Eкскурзии във Португалия</a></li>
+                <li><a href="#">Eкскурзии във Русия</a></li>
+                <li><a href="#">Eкскурзии във Турция</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="hover-hidden-menus" id="hidden-hover-menu-3">
+                <li><a href="#">ОАЕ</a></li>
+                <li><a href="#">Израел и Йордания</a></li>
+                <li><a href="#">Иран</a></li>
+                <li><a href="#">Тунис</a></li>
+                <li><a href="#">Египет</a></li>
+                <li><a href="#">Мароко</a></li>
+                <li><a href="#">Мавриций</a></li>
+                <li><a href="#">Кабо Верде</a></li>
+                <li><a href="#">Куба</a></li>
+                <li><a href="#">Бразилия и Аржентина</a></li>
+                <li><a href="#">Перу и Чили</a></li>
+                <li><a href="#">Япония и Южна Корея</a></li>
+                <li><a href="#">Китай</a></li>
+                <li><a href="#">Индия и Непал</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="hover-hidden-menus" id="hidden-hover-menu-4">
+                <li><a href="#">Най-изгодните почивки за Вас</a></li>
+                <li><a href="#">Почивки в България</a></li>
+                <li><a href="#">Почивки в чужбина</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="hover-hidden-menus" id="hidden-hover-menu-5">
+                <li><a href="#">Хотели в чужбина Online</a></li>
+                <li><a href="#">Хотели в България Online</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="hover-hidden-menus" id="hidden-hover-menu-6">
+                <li><a href="#">Избрахме за Вас</a></li>
+                <li><a href="#">Септемврийски празници</a></li>
+                <li><a href="#">Предколедни екскурзии</a></li>
+                <li><a href="#">Коледа</a></li>
+                <li><a href="#">Нова година</a></li>
+            </ul>
+        </div>
+
+        <div class="social-icons-wrapper">
+            <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </nav>
+</header>
+
+<section class="slider-section">
+    <img src="images/slider1.jpg" alt="slider image" id="slider-img-1">
+
+    <div class="gallery-btn-wrapper">
+        <div class="gallery-btn" id="gallery-btn-1"></div>
+        <div class="gallery-btn" id="gallery-btn-2"></div>
+        <div class="gallery-btn" id="gallery-btn-3"></div>
+        <div class="gallery-btn" id="gallery-btn-4"></div>
+        <div class="gallery-btn" id="gallery-btn-5"></div>
+    </div>
+
+    <form action="" method="get" class="form-many-selects">
+        <div id="choose-select-btn-wrapper">
+            <select name="country">
+                <option value="">Държава</option>
+                <option value="">Австрия</option>
+                <option value="">Албания</option>
+                <option value="">Аржентина</option>
+                <option value="">Бегия</option>
+                <option value="">Босна и Херцеговина</option>
+                <option value="">Бразилия</option>
+                <option value="">България</option>
+                <option value="">Великобритания</option>
+                <option value="">Гърция</option>
+                <option value="">Египет</option>
+                <option value="">Израел</option>
+                <option value="">Индия</option>
+                <option value="">Иран</option>
+                <option value="">Исландия</option>
+                <option value="">Испания</option>
+                <option value="">Италия</option>
+                <option value="">Камбоджа</option>
+                <option value="">Кипър</option>
+                <option value="">Куба</option>
+                <option value="">Мавриций</option>
+                <option value="">Македония</option>
+                <option value="">Малдиви</option>
+                <option value="">Малта</option>
+                <option value="">Мароко</option>
+                <option value="">ОАЕ</option>
+                <option value="">Перу</option>
+                <option value="">Португалия</option>
+                <option value="">САЩ</option>
+                <option value="">Сингапут</option>
+                <option value="">Сърбия</option>
+                <option value="">Тайланд</option>
+                <option value="">Тунис</option>
+                <option value="">Турция</option>
+                <option value="">Унгария</option>
+                <option value="">Финландия</option>
+                <option value="">Франция</option>
+                <option value="">Хон Конг</option>
+                <option value="">Хърватия</option>
+                <option value="">Черба гора</option>
+                <option value="">Чехия</option>
+                <option value="">Чили</option>
+                <option value="">Швейцария</option>
+                <option value="">Шри Ланка</option>
+                <option value="">Япония</option>
+            </select>
+
+            <select name="city">
+                <option value="">Град</option>
+            </select>
+
+            <select name="transport">
+                <option value="">Вид транспорт</option>
+                <option value="">Самолет</option>
+                <option value="">Автобус</option>
+                <option value="">Кораб</option>
+                <option value="">Влак</option>
+                <option value="">Собствен транспорт</option>
+            </select>
+
+            <select name="month_of_departure">
+                <option value="">Месец на отпътуване</option>
+                <option value="">Септември 2017</option>
+                <option value="">Октомври 2017</option>
+                <option value="">Ноември 2017</option>
+                <option value="">Декември 2017</option>
+                <option value="">Януари 2018</option>
+                <option value="">Февруари 2018</option>
+                <option value="">Март 2018</option>
+                <option value="">Април 2018</option>
+                <option value="">Маи 2018</option>
+                <option value="">Юни 2018</option>
+                <option value="">Юли 2018</option>
+                <option value="">Август 2018</option>
+            </select>
+
+            <button>ТЪРСЕНЕ</button>
+    </form>
+
+    <div id="slider-headings-wrapper">
+        <h2><a href="#">ПОЧИВКИ 2017</a></h2>
+    </div>
+</section>
+
+<section class="cookie-and-hover-top-wrapper">
+    <p>
+        <span>„Бисквитките“ ни помагат да предоставяме услугите си. С използването на услугите ни приемате, че можем да използваме „бисквитки“.</span>
+        <a href="#">Прочети повече</a>
+        <button>Съгласен съм</button>
+    </p>
+
+    <div class="hover-top-btn">
+        <i class="fa fa-angle-up fa-5x" aria-hidden="true"></i>
+    </div>
+</section>
+
+<section class="top-offers-section">
+    <h3 id="top-offers-heading">топ оферти</h3>
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/catalunya.jpg" alt="СЛЪНЧЕВА КАТАЛУНИЯ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="СЛЪНЧЕВА КАТАЛУНИЯ 2017" class="excursion-heading">СЛЪНЧЕВА КАТАЛУНИЯ 2017</a>
+            </h5>
+
+            <span class="thin">от <span class="price">590</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 12.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+
+    </article>
+
+    <article class="top-offers-middle-articles">
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/rimini.jpg" alt="РИМИНИ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="ПОЧИВКА В РИМИНИ 2017" class="excursion-heading">ПОЧИВКА В РИМИНИ 2017</a>
+            </h5>
+
+            <span class="thin">от <span class="price">490</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 06.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/puliq.jpg" alt="Пулия">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ПОЧИВКИ В ПУЛИЯ 2017 - ПОЛЕТ ОТ СОФИЯ" class="excursion-heading">ПОЧИВКИ В ПУЛИЯ 2017 - ПОЛЕТ ОТ СОФИЯ</a>
+            </h5>
+
+            <span class="thin">от <span class="price">490</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 09.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/sicily.jpg" alt="СИЦИЛИЯ КАТАНИЯ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ПОЧИВКИ В СИЦИЛИЯ, КАТАНИЯ 2017 ОТ СОФИЯ" class="excursion-heading">ПОЧИВКИ В СИЦИЛИЯ, КАТАНИЯ 2017 ОТ СОФИЯ</a>
+            </h5>
+            <span class="thin">от <span class="price">690</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 09.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article class="top-offers-middle-articles">
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/campaniq.jpg" alt="КАМПАНИЯ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="ПОЧИВКА В КАМПАНИЯ" class="excursion-heading">ПОЧИВКА В КАМПАНИЯ</a>
+            </h5>
+
+            <span class="thin">от <span class="price">750</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 09.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/italy-rimini.jpg" alt="РИМИНИ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ПОЧИВКА В ИТАЛИЯ, РИМИНИ 2017 ЗА МАЛКИ, ГОЛЕМИ И 55+" class="excursion-heading">ПОЧИВКА В ИТАЛИЯ, РИМИНИ 2017 ЗА МАЛКИ, ГОЛЕМИ И 5...</a>
+            </h5>
+
+            <span class="thin">от <span class="price">769</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i></div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/egypt.jpg" alt="ЕГИПЕТ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="ПОЧИВКА В ЕГИПЕТ 2017" class="excursion-heading">ПОЧИВКА В ЕГИПЕТ 2017</a>
+            </h5>
+
+            <span class="thin">от <span class="price">820</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 30.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article class="top-offers-middle-articles">
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/sardinia.jpg" alt="САРДИНИЯ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="ПОЧИВКА В САРДИНИЯ" class="excursion-heading">ПОЧИВКА В САРДИНИЯ</a>
+            </h5>
+
+            <span class="thin">от <span class="price">990</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 12.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/south-italy.jpg" alt="ЮЖНА ИТАЛИЯ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ПОЧИВКА В ЮЖНА ИТАЛИЯ - НЕАПОЛ, СОРЕНТО, КАПРИ, АМАЛФИ, КАЗЕРТА" class="excursion-heading">ПОЧИВКА В ЮЖНА ИТАЛИЯ - НЕАПОЛ, СОРЕНТО, КАПРИ, АМ...</a>
+            </h5>
+
+            <span class="thin">от <span class="price">998</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i></div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/liguriq.jpg" alt="ЛИГУРИЯ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ПОЧИВКА В ЛИГУРИЯ И ЛАЗУРНИЯ БРЯГ - ЕСЕН 2017" class="excursion-heading">ПОЧИВКА В ЛИГУРИЯ И ЛАЗУРНИЯ БРЯГ - ЕСЕН 2017</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1040</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 11.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article class="top-offers-middle-articles">
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/toscana%20beach.jpg" alt="ТОСКАНСКОТО">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="САМОЛЕТНА ПОЧИВКА НА ТОСКАНСКОТО КРАЙБРЕЖИЕ" class="excursion-heading">САМОЛЕТНА ПОЧИВКА НА ТОСКАНСКОТО КРАЙБРЕЖИЕ</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1049</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 13.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/lake-garda.jpg" alt="ЕЗЕРОТО ГАРДА">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="САМОЛЕТНА ПОЧИВКА НА ЕЗЕРОТО ГАРДА" class="excursion-heading">САМОЛЕТНА ПОЧИВКА НА ЕЗЕРОТО ГАРДА</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1149</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 13.09.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/dubai.jpg" alt="ДУБАЙ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="ПОЧИВКА В ДУБАЙ" class="excursion-heading">ПОЧИВКА В ДУБАЙ</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1190</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 01.10.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article class="top-offers-middle-articles">
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/maroco.jpg" alt="МАРОКО">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5 class="offers-single-line-h5">
+                <a href="#" title="ПОЧИВКА В МАРОКО 2017" class="excursion-heading">ПОЧИВКА В МАРОКО 2017</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1250</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 03.10.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/portugal-lisabon.jpg" alt="ЛИСАБОН И АЛГАРВЕ">
+            </div>
+        </a>
+
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ПОЧИВКА В ПОРТУГАЛИЯ - ЛИСАБОН И АЛГАРВЕ, ПРОЛЕТ/ЕСЕН" class="excursion-heading">ПОЧИВКА В ПОРТУГАЛИЯ - ЛИСАБОН И АЛГАРВЕ, ПРОЛЕТ...</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1309</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i></div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <a href="#">
+            <div class="zoom-img-wrapper">
+                <img src="images/river-nile.jpg" alt="РЕКА НИЛ" id="img123">
+            </div>
+        </a>
+        <div class="offers-info-wrapper">
+            <h5>
+                <a href="#" title="ЛУКСОЗЕН КРУИЗ ПО РЕКА НИЛ 2017" class="excursion-heading">ЛУКСОЗЕН КРУИЗ ПО РЕКА НИЛ 2017</a>
+            </h5>
+
+            <span class="thin">от <span class="price">1160</span> лв.</span>
+            <p>
+            <div>8 дни / 7 нощувки</div>
+            <div class="flight-data"><i class="fa fa-plane" aria-hidden="true"></i> 04.11.2017 г.</div>
+            <button>ПОВЕЧЕ</button>
+            </p>
+        </div>
+    </article>
+</section>
+
+<section class="useful-links-section">
+    <article>
+        <h6>Полезни връзки</h6>
+        <ul>
+            <li><a href="#">екскурзии | </a></li>
+            <li><a href="#">почивки | </a></li>
+            <li><a href="#">екзотика | </a></li>
+            <li><a href="#">Великден | </a></li>
+            <li><a href="#">майски празници | </a></li>
+            <li><a href="#">2017 |</a></li>
+        </ul>
+    </article>
+</section>
+
+<footer class="main-footer">
+    <article class="telephones-email-container">
+        <p>
+            <span><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  +359 2 951 63 06 / +359 2 953 25 80  </span>
+            <span><i class="fa fa-mobile fa-lg" aria-hidden="true"></i> +359 893 619 494  </span>
+            <span><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>  alder@bgnet.bg</span>
+        </p>
+    </article>
+
+    <article class="footer-logo-address-wrapper">
+        <div id="logo-info">
+            <img src="images/logo.png" alt="logo">
+            <p><span class="bold">№ на лиценз:</span> 03745/ 28 01 2005</p>
+            <p><span  class="bold">Застрахователна полица </span></p>
+            <p>№ 7500160000484 / 16.11.2016 г</p>
+        </div>
+
+        <div id="address-info">
+            <h6><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> ОФИС СОФИЯ</h6>
+            <p  class="bold">Адрес: </p>
+            <p>София 1606, ул. „Димитър Трайкович” 5</p>
+            <p class="bold">Работно време: </p>
+            <p>понеделник – петък: 09.00 – 17.30 ч. </p>
+        </div>
+
+        <div class="all-rights-reserved">
+            <p>
+                <span>Този сайт е рекламен. Информация съгласно чл. 80 от ЗТ може да получите в нашите офиси.</span>
+                <span>
+                    Алдер © 2017. Всички права запазени &nbsp;&nbsp;
+                    <img src="images/prostudio.gif" alt="design by Prostudio">
+                </span>
+            </p>
+        </div>
+    </article>
+</footer>
+</body>
+</html>
